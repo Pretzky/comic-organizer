@@ -25,13 +25,13 @@ class App extends Component {
       <Router>
         <NavBar />
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/comic-organizer">
             <Comics comics={this.state.user.comics} />
           </Route>
-          <Route exact path="/settings">
+          <Route exact path="/comic-organizer/settings">
             <Settings user={this.state.user} setComics={this.setComics} />
           </Route>
-          <Route exact path="/download">
+          <Route exact path="/comic-organizer/download">
             <Download user={this.state.user} setUser={this.setUser} />
           </Route>
         </Switch>
