@@ -8,9 +8,9 @@ class NavBar extends Component {
   render() {
     return (
       <NavBarWrapper>
-        <NavButton selected={this.props.location.pathname === "/"} to="/">Comics</NavButton>
-        <NavButton selected={this.props.location.pathname === "/settings"} to="/settings">Settings</NavButton>
-        <NavButton selected={this.props.location.pathname === "/download"} to="/download">Download</NavButton>
+        <NavButton selected={this.props.location.pathname === "/comic-organizer"} to="/comic-organizer">Comics</NavButton>
+        <NavButton selected={this.props.location.pathname === "/comic-organizer/settings"} to="/comic-organizer/settings">Settings</NavButton>
+        <NavButton selected={this.props.location.pathname === "/comic-organizer/download"} to="/comic-organizer/download">Download</NavButton>
       </NavBarWrapper>
     );
   }
