@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/comic-organizer/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/comic-organizer/static/js/main.90836f9a.chunk.js",
+    "main.js.map": "/comic-organizer/static/js/main.90836f9a.chunk.js.map",
+    "runtime-main.js": "/comic-organizer/static/js/runtime-main.a082acb3.js",
+    "runtime-main.js.map": "/comic-organizer/static/js/runtime-main.a082acb3.js.map",
+    "static/js/2.0acfa56a.chunk.js": "/comic-organizer/static/js/2.0acfa56a.chunk.js",
+    "static/js/2.0acfa56a.chunk.js.map": "/comic-organizer/static/js/2.0acfa56a.chunk.js.map",
+    "index.html": "/comic-organizer/index.html",
+    "precache-manifest.4c7f786d7cb2ecc192266c56eb1aba7f.js": "/comic-organizer/precache-manifest.4c7f786d7cb2ecc192266c56eb1aba7f.js",
+    "service-worker.js": "/comic-organizer/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/comic-organizer/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.0acfa56a.chunk.js.LICENSE.txt": "/comic-organizer/static/js/2.0acfa56a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a082acb3.js",
+    "static/js/2.0acfa56a.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.90836f9a.chunk.js"
+  ]
+}
