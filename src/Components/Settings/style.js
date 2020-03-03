@@ -10,6 +10,22 @@ export const SettingsWrapper = styled.div`
   height: calc(100vh - 10rem);
   width: 100vw;
   padding: 1rem 0rem;
+`;
+
+export const ComicSettings = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  height: stretch;
+  max-width: 95%;
+  padding: 1rem;
+  color: #630101;
+  font-family: Righteous;
+
+  span {
+    font-size: 22px;
+  }
 
   ::-webkit-scrollbar {
     width: 0.5rem;
@@ -25,27 +41,13 @@ export const SettingsWrapper = styled.div`
   }
 `;
 
-export const ComicSettings = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: stretch;
-  max-width: 95%;
-  padding: 1rem;
-  color: #630101;
-  font-family: Righteous;
-
-  span {
-    font-size: 22px;
-  }
-`;
-
 export const ComicSetting = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   background-color: #FF9494;
-  height: 3rem;
+  min-height: 3rem;
+  max-height: 3rem;
   min-width: 58rem;
   max-width: 90%;
   margin: 0.5rem;
@@ -75,7 +77,7 @@ export const ComicSetting = styled.div`
   }
 
   label {
-    color: #297C63;
+    color: #FFFFFF;
     margin-left: 1rem;
   }
 `;
