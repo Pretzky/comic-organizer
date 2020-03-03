@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import NavBar from './Components/NavBar/NavBar';
+import Comics from './Components/Comics/Comics';
+import Settings from './Components/Settings/Settings';
+import Download from './Components/Download/Download';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    user: {
+      comics: []
+    }
+  }
+
+  setComics = newComics => {
+    this.setState({ user: { comics: newComics } });
+  }
+
+  setUser = newUser => {
+    this.setState({ user: newUser });
+  }
+
+  render() {
+    return (
+      <Router>
+        <NavBar />
+        <Switch>
+          <Route exact path="/">
+            <Comics comics={this.state.user.comics} />
+          </Route>
+          <Route exact path="/settings">
+            <Settings user={this.state.user} setComics={this.setComics} />
+          </Route>
+          <Route exact path="/download">
+            <Download user={this.state.user} setUser={this.setUser} />
+          </Route>
+        </Switch>
+      </Router>
+    );
+  }
 }
 
 export default App;
